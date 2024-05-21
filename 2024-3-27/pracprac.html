@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>함수 연습하기</title>
+    </head>
+    <body>
+        <script>
+           function calNum(n){
+            let sum = 0;
+            for(let i =1 ; i<=n; i++){
+                sum=sum+i;
+            
+            }
+            return sum;
+            //document.write("1부터 "+n+"까지 더한 값은 "+sum+"입니다");
+           }
+           
+        let addNum = parseInt(prompt("숫자를 몇까지 더할까요"));
+        let result = calNum(addNum); 
+        alert("1부터 "+addNum+"까지 더한값은 "+result+"입니다");
+        console.log(calNum(addNum));
+
+            (function(){
+                let userName = prompt("이름을 입력하세요");
+                document.write("안녕하세요? "+userName+"님 반갑습니다<br>");
+            }());   
+            (function(a,b){
+                sum = a+b;
+            }(100,200));
+            document.write(sum);
+            document.write("<br>");
+            const hi = function(){
+                return "안녕하세요";
+            }
+            document.write("안녕하세요"+hi);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>좌석배치도2</title>
+    </head>
+    <body>
+        <script>
+            let garo = 5;
+            let all = 20;
+            let sero = Math.ceil(all/garo);
+            for(let i =0 ; i<5; i++){
+                for(j = 0; j <=sero;j++){
+                    document.write("좌석"+(i+1)+"열"+(j+1)+"번"+"&nbsp;");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </body>
+</html>

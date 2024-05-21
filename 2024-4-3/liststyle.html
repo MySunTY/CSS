@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>list-style-type</title>
+        <style>
+            body{
+                background: url(cat.gif) no-repeat fixed;
+                background-position: center;
+            }
+            .liststyle1{
+                list-style-type: none;
+            }
+            .liststyle2{
+                list-style-type: upper-alpha;
+            }
+            .liststyle3{
+                list-style-image: url('포크.webp');
+                list-style-position: inside;
+            }
+            .liststyle4{
+                list-style-type: upper-alpha;
+                list-style-position: inside;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>도서 시리즈</h1>
+        <ul class="liststyle1">
+            <li>Do it! 시리즈</li>
+            <li>첫 코딩 시리즈</li>
+            <li>된다 시리즈</li>
+        </ul>
+
+        <ol class="liststyle2">
+            <li>Do it! 시리즈</li>
+            <li>첫 코딩 시리즈</li>
+            <li>된다 시리즈</li>
+        </ol>
+        <ol class="liststyle4">
+            <li>Do it! 시리즈</li>
+            <li>첫 코딩 시리즈</li>
+            <li>된다 시리즈</li>
+        </ol>
+        <ul class="liststyle3">
+            <li>Do it! 시리즈</li>
+            <li>첫 코딩 시리즈</li>
+            <li>된다 시리즈</li>
+        </ul>
+    </body>
+</html>

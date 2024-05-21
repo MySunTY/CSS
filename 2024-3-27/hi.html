@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>객체</title>
+    </head>
+    <body>
+        <script>
+            let now = new Date();
+            alert("현재시각은 "+now);
+
+            let  number = new Array(5);
+            number[0]= 1;
+            number[1]= 2;
+            number[2]= 3;
+            number[3]= 4;
+            number[4]= 5;
+            console.log(number);
+            number.push(6);
+            number.push(7);
+            number.push(8);
+            for(let i =0 ; i <number.length ; i++){
+                document.write(number[i]+"<br>");
+            }
+
+            let season = new Array();
+            season = ["봄","여름","가을","겨울"];
+            for(let i = 0 ; i<season.length; i++){
+                document.write(season[i]+"&nbsp;&nbsp;&nbsp");
+            }
+            document.write("<br>");
+
+            let seasonNumber = season.concat(number);
+            let numberSeason = number.concat(season);
+            document.write("season에 number를 합치면 "+seasonNumber+"<br>");
+            document.write("number에 season을 합치면"+numberSeason);
+            abdhiecfg
+            hdibeafcg
+            hidebfgca
+            
+        </script>
+    </body>
+</html>

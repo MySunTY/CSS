@@ -1,0 +1,18 @@
+*{ /*전체 선택자*/
+    box-sizing: border-box;
+}
+body{ /*문서 본문*/
+    display: flex; /* 플렉스 컨테이너 */
+    justify-content: center; /* 주축(수평)정렬 */
+    align-items: center; /* 교차축(수직 정렬 */
+    margin:0;
+    min-height : 100vh;
+}
+#container{ /* 컨테이너 스타일*/
+    width: 250px;
+    height:375px;
+    padding:100px 50px;
+    border : 1px solid black;
+    background: url("Image20240508104704.jpg") no-repeat left top;
+    background-size: auto;
+}

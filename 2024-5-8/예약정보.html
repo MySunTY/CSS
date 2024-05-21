@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>예약 정보</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #container{
+                width: 500px;
+                margin : 0 auto;
+                height: 600px;
+                
+            }
+            .long{
+                width:450px;
+                margin:10px;
+                height: 50px;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+            }
+            h1{
+                text-align: center;
+            }
+            .reserv{
+                width:470px;
+                height:50px;
+                background-color: rgba(255, 255, 0, 0.700);
+                
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <form>
+                <fieldset>
+                    <h1>예약 정보</h1>
+                <ul>
+                <li> 
+                    <label>이 름
+                        <input type="text" name="name" placeholder="이름을 입력하세요" autofocus required class="long">
+                    </label>
+                </li>
+                <li>    
+                    <label>휴대폰
+                        <input type="tel" name="phone" placeholder="숫자만 입력하세요 01012345678" class="long">
+                    </label>
+                </li>
+                <li>
+                    <label>이메일
+                        <input type="email" name="mail" placeholder="이메일을 입력하세요" class="long">
+                    </label>
+                </li>    
+                </ul>
+                    <input type="submit" value="예약하기" class="reserv">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>회원 가입</title>
+        <style>
+            #container{
+                width:600px;
+                margin:  0 auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="container">
+            <h1>회원 가입을 환영합니다</h1>
+            <form>
+                <fieldset>
+                    <legend>사용자 정보</legend>
+                    <ul>
+                        <li>
+                            <label>아이디
+                                <input type="text" name="id" required placeholder="4자~10자 사이, 공백없이">
+                            </label>
+                        </li>
+                        <li>
+                            <label>이메일
+                                <input type="email" name="mail" required>
+                            </label>
+                        </li>
+                        <li>
+                            <label>비밀번호
+                                <input type="password" required placeholder="문자와 숫자, 특수기호 포함" autofocus>
+                            </label>
+                        </li>
+                        <li>
+                            <label>비밀번호 확인
+                                <input type="password" required>
+                            </label>
+                        </li>
+                    </ul>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>이벤트와 새로운 소식</legend>
+                    <input type="radio" name="ev" value="yes">메일 수신
+                    <input type="radio" name="ev" value="no" checked>메일 수신 안함
+                </fieldset>
+                <fieldset>
+                    <legend>상품 선택</legend>
+                    <label for="prod1">상품 선택</label>
+                    <select id="prod1">
+                        <option value="g3" selected>선물용 3kg</option>
+                        <option value="g5">선물용 5kg</option>
+                        <option value="h3">가정용 3kg</option>
+                        <option value="h5">가정용 3kg</option>
+                    </select>
+                    <label for="prod2">포장 여부</label>
+                    <input type="text" id="prod2" list="pack">
+                    <datalist id="pack">
+                        <option value="package">선물 포장</option>
+                        <option value="no_package">포장 안 함</option>
+                    </datalist>
+                </fieldset>
+                <input type="submit" value="가입하기">
+                <input type="reset" value="취소">
+            </form>
+        </div>
+    </body>
+</html>
