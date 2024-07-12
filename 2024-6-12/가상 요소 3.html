@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>가상요소</title>
+        <style>
+            .container{
+                width : 960px;
+                margin:0 auto;
+            }
+            ul li{
+                margin :15px;
+            }
+            li.new:after{
+                content:"NEW!";
+                font-size:x-small;
+                padding:2px 4px;
+                margin : 0 10px;
+                background-color: red;
+                border-radius: 2px;
+                color: white;
+            }
+            li.sale:before{
+                content:"SALE!";
+                font-size:x-small;
+                margin:0 10px;
+                background-color: blue;
+                padding:2px 4px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>제품 목록</h1>
+            <ul>
+                <li class="new">제품 A</li>
+                <li class="sale">제품 B</li>
+                <li class="sale">제품 C</li>
+                <li class="new">제품 D</li>
+            </ul>
+        </div>
+        <script>
+            let news = document.getElementsByClassName("new");
+            let sales = document.getElementsByClassName("sale");
+            let count =0;
+            function flash(){
+                
+                    if(count%2==0){
+                    news[1].style.display="none";
+                    count++;
+                    }else if(count%2==1){
+                    news[1].style.display="block";
+                    count++;
+                    }
+                   
+
+              
+               
+               
+            }
+            setInterval(flash,1000);
+        </script>
+    </body>
+</html>

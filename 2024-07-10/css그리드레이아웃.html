@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #wrap{
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+           
+            
+            margin-bottom: 20px;
+            
+        }
+        #wrap2{
+           
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            margin-bottom: 20px;
+        }
+        .items{
+            padding:15px;
+            background-color: #eee;
+        }
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>auto-fit일때</h1>
+    <div id="wrap">
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+
+    </div>
+    <h1>auto-fill일때</h1>
+    <div id="wrap2">
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+        <div class="items">sadfadsfasdfsdafsdfsadfasdfasdfasdfasdfasdfasdfsadfsadfsadfsadfsdf</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>가상요소</title>
+        <style>
+            *{margin:0; padding:0; box-sizing: border-box;}
+            li{list-style: none;}
+            a{text-decoration: none;}
+            #wrap{
+                width: 300px;
+                margin: auto;
+                border: 1px solid beige;
+                text-align: center;
+            }
+            ul li:nth-of-type(2n+1){
+                background-color: lightgray;
+                color: black;
+            }
+            li{
+                padding:10px;
+            }
+            ul li:hover{
+                background-color: aqua;
+                cursor:pointer;
+                color:blueviolet;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <h1>웹 개발</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>node.js</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -31,7 +31,7 @@ ul li input{
 
 
 #submit{
-    width : 492px;
+    width : 470px;
     height : 50px;
     border : 1px solid black;
     margin : 20px auto;
@@ -43,7 +43,26 @@ ul li input{
     width : 200px;
     text-align: center;
     border-radius: 100px;
+    font-size: 20px;
     
+}
+
+#wrap input:not([type=radio],[type=submit]){
+    border:1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding:5px;
+}
+#wrap input[required]{
+    border : 1px solid red;
+}
+#wrap input[readonly]{
+    border : none;
+}
+
+#wrap fieldset:last-of-type{
+    border:none;
+    margin-bottom:0;
 }
 span{
     display : inline-block;
@@ -52,5 +71,6 @@ span{
 }
 input[type="submit"]:hover{
     cursor : pointer;
-    background-color: yellow;
+    background-color: black;
+    color:white;
 }

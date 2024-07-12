@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>ps-2</title>
+        <style>
+             *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            li{list-style:none;}
+            a{text-decoration: none;}
+            nav>ul{
+                
+                display: block;
+                text-align: center;
+            }
+            nav>ul>li{
+                float:left;
+                width: 150px;
+                margin: 30px auto;
+                margin-right:10px;
+                
+
+
+            }
+            nav>ul>li>a{
+                border:1px solid black;
+                width:150px;
+                display: block;
+                
+            }
+            nav{
+                width:700px;
+                height : 100px;
+                text-align: center;
+                margin:auto;
+                border-bottom : 1px solid gray;
+            }
+            nav a{
+                text-align: center;
+            }
+            nav a:hover{
+                background-color: #0069e0;
+                color: white;
+            }
+            nav a:active{
+                background-color: red;
+            }
+
+            form{
+                width:500px;
+                height: 400px;
+                margin: 30px auto;
+                border: 1px solid black;
+            }
+            fieldset{
+                margin:30px;
+                padding:30px;
+                
+            }
+            span{
+                width:80px;
+                display: inline-block;
+            }
+            #signup input:checked + label{
+                color:red;
+                font-weight: bold;
+            }
+            input[type="submit"]{
+                width:100px;
+                height:40px;
+                display: block;
+                border: 1px solid black;
+                margin:auto;
+                border-radius: 30px;
+            }
+           /* input[type="text"],input[type="tel"]{
+                border:1px solid #ccc;
+                border-radius: 3px;
+                padding : 5px;
+                width :200px;
+            }*/
+            input:not([type="radio"]){
+                background-color: gainsboro;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navi">
+            <ul>
+                <li><a href="ps-1.html#intro">이용 안내</a></li>
+                <li><a href="ps-1.html#room">객실 소개</a></li>
+                <li><a href="ps-1.html#reservation">예약방법 및 요금</a></li>
+                <li><a href="ps-2.html">예약하기</a></li>
+            </ul>
+        </nav>
+        <form id="signup">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <span>이름</span>
+                        <input type="text" id="fullname" name="fullname">
+                    </li>
+                    <li>
+                        <span>연락처</span>
+                        <input type="tel" id="tel" name="tel">
+                    </li>
+                </ul>
+
+            </fieldset>
+            <fieldset>
+                <legend>객실 형태</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="room" id="basic">
+                        <label for="basic">기본형(최대 2인)</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="room" id="family">
+                        <label for="family">가족형(최대 8인)</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="제출">
+        </form>
+    </body>
+</html>

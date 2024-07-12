@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>성적표</title>
+        <style>
+            *{margin:0; padding:0; box-sizing: border-box;}
+            #wrap{
+                width:450px;
+                border: 1px solid beige;
+                margin : auto;
+                text-align: center;
+            }
+            header div{
+                width:148px;
+                float:left;
+                border: 1px solid beige;
+            }
+            #body .member div{
+                width:148px;
+                float:left;
+                border: 1px solid beige;
+            }
+            footer div{
+                width:148px;
+                float:left;
+                border: 1px solid beige;
+            }
+            header div, footer div{
+                background-color: gray;
+            }
+            #body:nth-child(2n){
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <h3>1학기 성적</h3>
+            <hr>
+            <header>
+                <div>이름</div>
+                <div>HTML</div>
+                <div>CSS</div>
+            </header>
+            <div id="body">
+                <div id="mem1" class="member">
+                    <div>황기태</div>
+                    <div>80</div>
+                    <div>70</div>
+                </div>
+                <div id="mem2" class="member">
+                    <div>이재문</div>
+                    <div>95</div>
+                    <div>99</div>
+                </div>
+                <div id="mem3" class="member">
+                    <div>이병은</div>
+                    <div>85</div>
+                    <div>90</div>
+                </div>
+                <div id="mem4" class="member">
+                    <div>김남윤</div>
+                    <div>50</div>
+                    <div>40</div>
+                </div>
+                
+            </div>
+            <footer>
+                <div>합</div>
+                <div>310</div>
+                <div>249</div>
+            </footer>
+
+
+        </div>
+    </body>
+</html>

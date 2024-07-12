@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>가상 요소</title>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            li{list-style:none;}
+            a{text-decoration: none;}
+            nav>ul{
+                
+                display: block;
+                text-align: center;
+            }
+            nav>ul>li{
+                float:left;
+                width: 150px;
+                margin: 30px auto;
+                margin-right:10px;
+                
+
+
+            }
+            nav>ul>li>a{
+                border:1px solid black;
+                width:150px;
+                display: block;
+                
+            }
+            nav{
+                width:700px;
+                height : 100px;
+                text-align: center;
+                margin:auto;
+                border-bottom : 1px solid gray;
+            }
+            nav a{
+                text-align: center;
+            }
+            nav a:hover{
+                background-color: #0069e0;
+                color: white;
+            }
+            nav a:active{
+                background-color: red;
+            }
+            .contents{
+                width:500px;
+                height: 300px;
+                border : 1px solid black;
+                border-radius: 10px;
+                margin : 30px auto;
+            }
+            #intro:target{
+                background-color: #0069e0;
+                color: white;
+            }
+            #room:target{
+                background-color: #ff9844;
+
+            }
+            #reservation:target{
+                background-color: #fff8dc;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <nav class="navi">
+                <ul>
+                    <li><a href="#intro">이용 안내</a></li>
+                    <li><a href="#room">객실 소개</a></li>
+                    <li><a href="#reservation">예약방법 및 요금</a></li>
+                    <li><a href="ps-2.html">예약하기</a></li>
+                </ul>
+            </nav>
+            <div class="contents" id="intro">
+                <h2>이용 안내</h2>
+                <p>이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내
+                    이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내
+                    이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내</p>
+            </div>        
+            <div class="contents" id="room">
+                <h2>객실 소개</h2>
+                <p>이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내
+                    이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내
+                    이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내</p>
+            </div>        
+            <div class="contents" id="reservation">
+                <h2>예약 방법 및 요금</h2>
+                <p>이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내
+                    이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내
+                    이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 
+                    안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내이용 안내</p>
+            </div>        
+        </div>
+        
+    </body>
+</html>
